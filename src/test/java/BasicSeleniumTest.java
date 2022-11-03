@@ -97,6 +97,9 @@ public class BasicSeleniumTest {
         textAreaup.sendKeys(Keys.RETURN);
         //task.click();
         Thread.sleep(10000);
+
+        actualResult = driver.findElements(By.xpath("//td/div[text()='"+newTask +"']")).size();
+        Assertions.assertTrue( actualResult >= 1, "Error: the task was not updated");
     }
 }
 
