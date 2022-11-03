@@ -28,3 +28,20 @@ click ok alert --> manejo de alertas selenium
 
 // verification update  ---> //td[text()='EynarUPDATE'] ---> NO EXISTA
 
+
+click en textArea --> id: NewItemContentInput
+
+click en el boton --> id: NewItemAddButton
+
+ItemContentDiv UnderEditingItem
+itemid:1107885
+
+ItemEditDiv
+
+textarea id: ItemEditTextbox
+
+<textarea id="ItemEditTextbox" type="text" value="" class="InputTextEdit InputTextEditItem" autocomplete="off" onkeydown="ItemList.ItemEditKeyDown(event, this);" onblur="ItemList.ItemLostFocus(this);" itemid="11079193" readonly="readonly" style="height: 15px; width: 579px;"></textarea>
+
+//*[@id="ItemEditTextbox"]
+/html/body/form/div[3]/table/tbody/tr[2]/td/div/div/table/tbody/tr/td[2]/div[1]/div[1]/div[4]/ul/li/div/table/tbody/tr/td[3]/div[5]/div/textarea
+
