@@ -2,10 +2,7 @@ package testSuite.todoist;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import page.todoist.MainMenu;
-import page.todoist.MainPage;
-import page.todoist.LoginSection;
-import page.todoist.ProjectSectionIst;
+import page.todoist.*;
 import session.Session;
 import util.GetProperties;
 
@@ -18,6 +15,8 @@ public class TestBase {
     public MainMenu mainMenu = new MainMenu();
 
     public ProjectSectionIst projectSectionIst = new ProjectSectionIst();
+
+    public TaskSection taskSection = new TaskSection();
 
     @BeforeEach
     public void openBrowser(){
