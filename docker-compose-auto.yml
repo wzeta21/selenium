@@ -19,5 +19,14 @@ services:
       - "4443:4443"
       - "4444:4444"
 
+  automation-web:
+    build: .
+    container_name: automation-web
+    depends_on:
+      - selenium-hub
+      - chrome
+    environment:
+      - NAME_TEST=UpdatePasswordTest
+
 # descarga e inicia :  docker-compose -f docker-compose-auto.yml up -d
 # ver si inicio correctamente :  docker-compose -f docker-compose-auto.yml  ps

@@ -39,6 +39,6 @@ public class CrudProjectTest extends TestBase {
         projectSectionIst.projectOptionMenu.click();
         projectSectionIst.deleteProj.click();
         projectSectionIst.delete.click();
-        Assertions.assertTrue(!projectSectionIst.isProjectDisplayedInList(projectUpdated),"ERROR! the project was not updated");
+        Assertions.assertTrue(!projectSectionIst.isProjectDisplayedInList(projectUpdated),"ERROR! the project was not deleted");
     }
 }
